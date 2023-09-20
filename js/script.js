@@ -8,7 +8,6 @@ const max = 99;
 const numbers = random();
 
 //variabili timing function
-let counter = 0;
 time()
 
 //variabili prompt
@@ -17,7 +16,6 @@ let promptList = [];
 // title.innerHTML = 'Complimenti/Mi dispiace' 
 
 //2. creare un elemento dove far apparire i numeri randomici
-
 const numbersContainer = document.createElement ('div');
 numbersContainer.classList.add('numbersSize');
 numbersContainer.innerHTML= `${numbers}`;
@@ -46,7 +44,8 @@ function time(){
 },5000)
 
   setTimeout(function(){
-   promptNumber(1)
+   promptNumber(1);
+   verify();
  },5500)
 }
 
@@ -60,3 +59,13 @@ function promptNumber(index){
 } 
 
 console.log(promptList);
+
+//6. verificare se i numeri inseriti sono corretti
+function verify(){
+  let counter = 0;
+  while(c<5){
+    if(numbersList.includes(promptList[c]))
+    counter++;
+    
+  }
+}
