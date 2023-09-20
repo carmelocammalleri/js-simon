@@ -11,7 +11,7 @@ const numbers = random();
 time()
 
 //variabili prompt
-let promptList = [];
+const promptList = [];
 //ULTIMO stampare messaggio gioco
 // title.innerHTML = 'Complimenti/Mi dispiace' 
 
@@ -63,9 +63,13 @@ console.log(promptList);
 //6. verificare se i numeri inseriti sono corretti
 function verify(){
   let counter = 0;
+  let c = 0;
   while(c<5){
-    if(numbersList.includes(promptList[c]))
-    counter++;
-    
+    if(numbers.includes(promptList[c])){
+      counter++;
+      title.innerHTML= `Hai indovinato ${counter} numeri su ${numberExtraction} `;
+    }
+    c++;
   }
+  console.log(counter);
 }
