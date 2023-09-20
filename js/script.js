@@ -2,8 +2,13 @@
 const title = document.getElementById('title')
 const containerGame = document.querySelector('.container');
 
+//costanti random
+const numberExtraction = 5;
+const max = 100;
+const numbers = random();
+
 //ULTIMO stampare messaggio gioco
-// title.innerHTML = 'Complimenti/Scarso' 
+// title.innerHTML = 'Complimenti/Mi dispiace' 
 
 //2. creare un elemento dove far apparire i numeri randomici
 
@@ -13,13 +18,9 @@ containerGame.append(numbersContainer);
 
 console.log(numbersContainer);
 
-const numberExtraction = 5;
-const max = 100;
-const numbers = random();
-//3. funzione per i numeri random
-
 console.log(numbers);
 
+//3. funzione per i numeri random
 function random (){
   const numbersList= [];
 
