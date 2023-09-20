@@ -45,15 +45,15 @@ function time(){
 },5000)
 
   setTimeout(function(){
-   promptNumber()
+   promptNumber(1)
  },5500)
 }
 
 //5.prompt generatore
-
-function promptNumber(){
+function promptNumber(index){
   for(let i = 0 ; i < 5; i++){
-    const number= parseInt(prompt('scrivi il numero'))
+    const number = parseInt(prompt(`scrivi il ${index}° numero`))
+    index++;
     promptList.push(number)
   }
 } 
