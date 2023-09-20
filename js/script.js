@@ -19,7 +19,8 @@ let promptList = [];
 //2. creare un elemento dove far apparire i numeri randomici
 
 const numbersContainer = document.createElement ('div');
-numbersContainer.innerHTML= `${numbers}` ;
+numbersContainer.classList.add('numbersSize');
+numbersContainer.innerHTML= `${numbers}`;
 containerGame.append(numbersContainer);
 
 console.log(numbersContainer);
