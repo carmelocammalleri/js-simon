@@ -4,7 +4,7 @@ const containerGame = document.querySelector('.container');
 
 //costanti random
 const numberExtraction = 5;
-const max = 100;
+const max = 99;
 const numbers = random();
 
 //ULTIMO stampare messaggio gioco
@@ -13,7 +13,7 @@ const numbers = random();
 //2. creare un elemento dove far apparire i numeri randomici
 
 const numbersContainer = document.createElement ('div');
-numbersContainer.innerHTML= '1 2 3 4 5'
+numbersContainer.innerHTML= `${numbers}` ;
 containerGame.append(numbersContainer);
 
 console.log(numbersContainer);
