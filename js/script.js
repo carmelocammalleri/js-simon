@@ -7,6 +7,10 @@ const numberExtraction = 5;
 const max = 99;
 const numbers = random();
 
+//variabili timing function
+let counter = 0;
+let limit = 25;
+
 //ULTIMO stampare messaggio gioco
 // title.innerHTML = 'Complimenti/Mi dispiace' 
 
@@ -31,6 +35,15 @@ function random (){
   }
   return numbersList;
 }
+
+//4. generare intervallo di tempo per far scomparire i numeri randomizzati
+function remove(){
+  const timeRemove = setInterval(function(){
+    counter++;
+
+  })
+}
+
 
 
 
