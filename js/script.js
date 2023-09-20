@@ -2,7 +2,6 @@
 const title = document.getElementById('title')
 const containerGame = document.querySelector('.container');
 
-const number = [];
 //ULTIMO stampare messaggio gioco
 // title.innerHTML = 'Complimenti/Scarso' 
 
@@ -14,8 +13,23 @@ containerGame.append(numbersContainer);
 
 console.log(numbersContainer);
 
+const numberExtraction = 5;
+const max = 100;
+const numbers = random();
 //3. funzione per i numeri random
 
+console.log(numbers);
+
+function random (){
+  const numbersList= [];
+
+  while (numbersList.length<numberExtraction){
+    const number = Math.ceil(Math.random()*max)
+    //pusho solo se il numero non è presente
+    if(!numbersList.includes(number)) numbersList.push(number);
+  }
+  return numbersList;
+}
 
 
 
