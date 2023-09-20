@@ -11,6 +11,8 @@ const numbers = random();
 let counter = 0;
 time()
 
+//variabili prompt
+let promptList = [];
 //ULTIMO stampare messaggio gioco
 // title.innerHTML = 'Complimenti/Mi dispiace' 
 
@@ -50,9 +52,10 @@ function time(){
 //5.prompt generatore
 
 function promptNumber(){
-  const number1= prompt('inserisci un numero');
-  const number2= prompt('inserisci un numero');
-  const number3= prompt('inserisci un numero');
-  const number4= prompt('inserisci un numero');
-  const number5= prompt('inserisci un numero');
-}
+  for(let i = 0 ; i < 5; i++){
+    const number= parseInt(prompt('scrivi il numero'))
+    promptList.push(number)
+  }
+} 
+
+console.log(promptList);
