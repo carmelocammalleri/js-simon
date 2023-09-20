@@ -40,5 +40,19 @@ function random (){
 function time(){
  setTimeout(function(){
   numbersContainer.innerHTML= ' ';
- },5000)
+},5000)
+
+  setTimeout(function(){
+   promptNumber()
+ },5500)
+}
+
+//5.prompt generatore
+
+function promptNumber(){
+  const number1= prompt('inserisci un numero');
+  const number2= prompt('inserisci un numero');
+  const number3= prompt('inserisci un numero');
+  const number4= prompt('inserisci un numero');
+  const number5= prompt('inserisci un numero');
 }
