@@ -6,7 +6,7 @@ const containerGame = document.querySelector('.container');
 const numberExtraction = 5;
 const max = 99;
 const numbers = random();
-
+const arrayEsatti = [];
 //variabili timing function
 time()
 
@@ -66,10 +66,13 @@ function verify(){
   let c = 0;
   while(c<5){
     if(numbers.includes(promptList[c])){
+      const numUguali = promptList[c];
+      arrayEsatti.push(numUguali)
       counter++;
       title.innerHTML= `Hai indovinato ${counter} numeri su ${numberExtraction} `;
     }
     c++;
+    numbersContainer.innerHTML= `I numeri indovinati sono: ${arrayEsatti}`
   }
-  console.log(counter);
+  console.log(arrayEsatti);
 }
